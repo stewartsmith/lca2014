@@ -1,10 +1,10 @@
 #!/usr/bin/env pinpoint
 
 [black]
-[font=Sans 70px]
 [text-align=center]
+[font=Sans 70px]
 [duration=45.000000]
--- [duration=4.448699]
+-- [duration=0.001354]
 Past, Present, and future of MySQL and variants
 
 
@@ -12,52 +12,67 @@ Stewart Smith
 Percona
 # Hi!
 # I work for
--- [white] [percona-logo.jpg]
+
+-- [percona-logo.jpg] [duration=9.657878]
+
 # Director of Software Architecture
 # which is a MySQL support, consulting and development company
 # prior to Percona, I worked for
---
+
+-- [duration=3.363800]
 Rackspace
 # on Drizzle (database forked from MySQL)
 # and prior to that
--- [white] [sun.png]
+
+-- [sun.png] [duration=4.079818]
+
 # on MySQL Cluster and Drizzle
 # and prior to that
---
+
+-- [duration=6.944191]
 MySQL AB
 # on MySQL Cluster
---
+
+-- [duration=3.896917]
 Ghosts of MySQL past
---
+
+-- [duration=13.289173]
 1979 - UNIREG
 # text UI to ISAM
---
+
+-- [duration=14.204985]
 1986 - UNIREG on UNIX
 # unix 80x24 interface to ISAM store
 # that 80x24 text UI is still created and stored in FRM files to this day
 # but no generic query language
---
+
+-- [duration=20.283136]
 mSQL
 # small SQL server, source there but not FOSS
 # originally plugged ISAM engine into mSQL
 # wasn't right fit, so....
---
+
+-- [duration=10.990934]
 1995 - MySQL 1.0
 
 MySQL AB founded
 # First, let's go back in time...
 # as well as anyone can remember, 1.0 was internal in 1995
---
+
+-- [duration=7.826691]
 1996 - 3.19
---
+
+-- [duration=12.473143]
 2000 - GPL
 # Wasn't always GPL, but big step in adoption
 # big risk for the company
 # not big, risk all your revenue
---
+
+-- [duration=16.036606]
 Dual license: libmysql
 # business and revenue model
---
+
+-- [duration=30.475519]
 May 2000 - Replication in 3.23.15
 # Commonly cited 2 weeks of development
 # logs all SQL statements, slave replays them.
@@ -65,7 +80,8 @@ May 2000 - Replication in 3.23.15
 # because without concurrency, this actually kinda works.
 # Easy to set up/use. Thus it won.
 # fast forward
---
+
+-- [duration=4.412672]
 Sept 2010 - PostgreSQL catches up
 # postgresql 9.0 had queryable read-only slaves
 # if you want to know why MySQL was so much bigger
@@ -73,35 +89,43 @@ Sept 2010 - PostgreSQL catches up
 # the age of a decent whisky ahead of PostgreSQL in
 # usable replication.
 # back to 2001:
---
+
+-- [duration=26.961575]
 2001 - 3.23 GA
 # 3.23 forever. revision 4 in bzr tree is 3.23.22-beta
 # GA - General Availability, "production ready"
 # what MySQL says is, not what users say.
---
+
+-- [duration=13.838140]
 2001 - InnoDB storage engine
 # from Finnish company Innobase Oy
 # brought transactions, MVCC
---
+
+-- [duration=6.627558]
 2001 - Mårten Mickos elected CEO
---
+
+-- [duration=8.160025]
 2001 - first round VC
 # Interesting implications for company
---
+
+-- [duration=17.536228]
 2002 - MySQL sued Progress NuSphere
 # Why? Copyright violation
 # first test of GPL in court.
 # GEMINI table type. eventually GPLed and abandoned
---
+
+-- [duration=13.222579]
 2003 - second round VC
 # Heavy investment in technology
 # Unlikely MySQL AB could ever
 # have hired as many devs otherwise.
---
+
+-- [duration=28.476242]
 March 2003: 4.0 GA
 # 4.1 and 5.0 were in alpha
 # three current trees
---
+
+-- [duration=47.760872]
 2003 - SAP partnership
 # "Run SAP R/3 on MySQL"
 # pushes things in a very odd direction
@@ -109,7 +133,8 @@ March 2003: 4.0 GA
 # and a few GB of data.
 # Before you do anything. MySQL did not like this in 2003.
 # Why? Well... then you could use SAP without buying Oracle Database.
---
+
+-- [duration=29.676802]
 A million features for Enterprise
 # This could be considered "MySQL focuses on Enterprise"
 # This is 2003: before views, stored procs, triggers,
@@ -119,7 +144,8 @@ A million features for Enterprise
 # slash in table names, performance statistics, unicode,
 # EXPLAIN for insert/update/delete (still not there),
 # PARTITIONING, row level binary logging, fractional seconds in temporal types
---
+
+-- [duration=58.716999]
 MaxDB
 # do not name your products after your kids.
 # started 1977. 6 companies, 9 names.
@@ -132,7 +158,8 @@ MaxDB
 #
 # It ended up back at SAP in 2007. Failed 2nd RDBMS at MySQL AB.
 # no longer GPL. Both outside contributors didn't exist.
---
+
+-- [duration=40.649849]
 2003 - Acquires Alzato
 # Network DataBase - NDB
 # what is to become MySQL Cluster
@@ -141,10 +168,13 @@ MaxDB
 # designed for GSM HLR databases
 # Early versions: five-nines or zero nines.
 # either worked for your app or exploded.
---
+
+-- [duration=19.367393]
 Oct 2004: 4.1 GA
 # incidently, shortly before I joined MySQL AB.
---
+# by this time, MySQL AB had hired just about all outside contributors
+
+-- [duration=46.644871]
 2005: 5.0 instability
 # 5.0 dev version plagued by instability
 # hard for teams (such as SAP team) to work on deliverables
@@ -153,11 +183,13 @@ Oct 2004: 4.1 GA
 # this was so bad, CI was reinvented.
 # feature++, stability--
 # the fact that less stable dev trees existed did not bode well.
---
+
+-- [duration=9.591952]
 Acquisitions
 # era of acquisitions
 # There's been a few
---
+
+-- [duration=54.521732]
 Oct 2005: Oracle acquired Innobase Oy
 
 Oct 2005: 5.0 "GA"
@@ -166,7 +198,8 @@ Oct 2005: 5.0 "GA"
 # 5.0 GA was shit. New features simply didn't work.
 # feeling that "marketing driven" rather than "market driven"
 # It took us over a year to use 5.0 internally for support issues DB
---
+
+-- [duration=39.051086]
 End 2005: Maria project started
 # create a transactional storage engine.
 # not MariaDB, Maria. Now Aria.
@@ -176,7 +209,8 @@ End 2005: Maria project started
 #
 # GA expected end 2007
 # Eight years later: no stable release.
---
+
+-- [duration=74.205887]
 2006: Netfrastructure acquired
 # Needing a transactional MVCC database engine
 # not owned by Oracle.
@@ -192,7 +226,8 @@ End 2005: Maria project started
 # was. Jim: "is it really like this?" me: "yes, yes it is".
 #
 # NDB took arguably 2-4 years to be really stable. Falcon any different?
---
+
+-- [duration=37.635159]
 2006: PBXT
 # Third party transactional engine
 # sort-of log based
@@ -200,7 +235,9 @@ End 2005: Maria project started
 # Lasted until ~2011
 # Hard to be a profitable SE vendor
 # There are some surviving very specialized ones.
---
+# InnoDB is just really damn good.
+
+-- [duration=37.119713]
 2006: MySQL Cluster: the first fork
 # 5.0 took a long time, 5.1 wasn't any time soon
 # Cluster customers needed a stable release.
@@ -208,11 +245,13 @@ End 2005: Maria project started
 #
 # This fork still exists.
 # Many features went here first.
---
+
+-- [duration=5.878443]
 2007:
 
 Windows Task Force
---
+
+-- [duration=30.808052]
 2007:
 
 WTF
@@ -220,19 +259,23 @@ WTF
 # somebody noticed that majority of downloads were for Windows.
 # our Windows story sucked. not using native Win32 calls,
 # much slower and non-Windows like than you'd expect.
---
+
+-- [duration=47.127399]
 Nov 2007: MySQL 6.0 Alpha
 # Alpha being key word.
 # 5.0 was finally behaving
 # 5.1 was nowhere near ready
 # Rumors of 6.1 tree
---
+
+-- [duration=4.130266]
 Jan 2008: Sun acquired MySQL AB
 # for...
---
+
+-- [duration=24.446249]
 One Billion dollars
 # Engineers did not see a lot of this.
---
+
+-- [duration=50.292187]
 2008: Year of Random Query Generator
 
 (the destroyer of servers)
@@ -242,7 +285,8 @@ One Billion dollars
 # generates them, throws them at server
 # 4 queries later, segfault.
 # rinse, repeat.
---
+
+-- [duration=39.251389]
 June 2008: Drizzle
 # Brian, followed by myself and others
 # forked MySQL 6.0 and started doing what we wanted.
@@ -253,30 +297,36 @@ June 2008: Drizzle
 #
 # Sun saw this as valuable, we went working on it full time.
 # If you haven't forked the project secretly, I heartily recommend it
---
+
+-- [duration=36.886204]
 Nov 2008: 5.1 GA
 # Over 3 years since 5.0 GA.
 # I would have won a $20 bet if it was 6 weeks later.
 #
 # Why OpenStack dev process and CI is the way it is
 # is a direct descendant of MySQL failings (via Drizzle)
---
+
+-- [duration=22.664297]
 End 2008: OurDelta
 # MySQL was bad enough getting its own code in,
 # it had neglected any process to get outside patches
 # OurDelta was a patchset. Lasted bit longer than 1 year
---
+
+-- [duration=37.451717]
 End 2008: Percona Server
 # Percona was founded by two former MySQLers
 # end 2008, they started own branch.
---
+
+-- [duration=5.928780]
 Feb 2009: MontyW leaves Sun.
---
+
+-- [duration=31.241230]
 March 2009: Final 6.0 Alpha
 # 2 years of alphas
 # 4 months after 5.1 GA
 # Shot it in the head.
---
+
+-- [duration=31.157454]
 2009: New MySQL dev model
 # early/mid
 # Don't merge rubbish.
@@ -288,14 +338,16 @@ March 2009: Final 6.0 Alpha
 # InnoDB needed a kick
 # Optimizer features all didn't work (RQG)
 # 6.1-fk server side fkeys
---
+
+-- [duration=31.674126]
 Oct 2009: First MariaDB 5.1 Beta release
 
 Monty Program AB
 # Hacker business model
 # Monty Program AB
 # several developers left to join Monty.
---
+
+-- [duration=59.617409]
 Jan 2010: Oracle acquired Sun
 # This, of course, meant that Falcon ("shipping in late 2006")
 # was going to be canned, as Oracle already owned InnoBase Oy.
@@ -306,59 +358,85 @@ Jan 2010: Oracle acquired Sun
 #
 # having your partner tell you at 5am you've just been acquired
 # by oracle is "not funny" even if it is true.
---
+
+-- [duration=4.695835]
 Feb 2010: First MariaDB 5.1 GA
---
+
+-- [duration=4.729986]
 Nov 2010: MariaDB 5.2 GA
---
+
+-- [duration=64.819427]
 Dec 2010: MySQL 5.5 GA
+
 --
+2011: Quiet year
+
+-- [duration=13.855174]
 Feb 2012: MariaDB 5.3 GA
 # not based on MySQL 5.5
 # By this time MariaDB was a big delta
 # Several branches at once
 # merging to new MySQL releases getting harder.
---
+
+-- [duration=32.656425]
 Apr 2012: First MariaDB 5.5 GA
 # 16 months after MySQL 5.5 GA
---
+
+-- [duration=3.996497]
 No acquisition in 2012
---
+
+-- [duration=7.893705]
 Feb 2013: 5.6 GA
 # Just 2y 2m after 5.5
---
+
+-- [duration=13.422357]
 April 2013: SkySQL acquires Monty Program
 # Yet another corp backed MySQL
---
+
+-- [duration=5.129056]
 Present day
 # three major vendors
---
+
+-- [duration=4.446653]
 MySQL 5.6
 # current stable release.
 # Oracle
---
+
+-- [duration=3.496835]
 MariaDB 5.5
 # current stable release
 # SkySQL
---
+
+-- [duration=6.194757]
 Percona Server 5.6
 # current stable release
 # Percona
---
+
+-- [duration=27.860460]
+Galera Replication
+# the go-to HA architecture
+# Percona Server and MariaDB
+# doing what MySQL Cluster has not done
+# Mainstream Active/Active HA.
+
+-- [duration=9.775149]
 An open source community?
 # talked about more in MySQL world than you'd expect.
 # Is there a development community?
---
+
+-- [duration=36.819805]
 MySQL 5.7 DR
 # dev release
 # 125 people have commits
 # at least 125 ppl at Oracle working on
 # current MySQL dev release.
 # non-oracle commits hard to come by
---
+
+-- [duration=36.403015]
 MariaDB 10.0
 # ~17ppl
---
+
+-- [duration=41.516109]
 MariaDB 5.5 Developer community
 
 2-3 people
@@ -367,12 +445,14 @@ MariaDB 5.5 Developer community
 # Big bits of work are Storage Engines
 # but these were all merged a long time ago
 # not seeing ongoing development
---
+
+-- [duration=21.082329]
 MySQL 5.5 Developer community
 
 1-2 people
 # so Oracle is as good as MariaDB here.
---
+
+-- [duration=32.889919]
 MariaDB 10.0
 
 3 external contributors
@@ -380,75 +460,134 @@ MariaDB 10.0
 # now in Beta.
 # this starts to deviate even more from MySQL
 # an external dev community seems largely a myth
---
+
+-- [duration=38.984402]
 Security
 # Oracle company policy sucks
 # security throuh obscurity is dumb.
 # Maria scores better here,
 # Percona largely follows Oracle releases
 # and (where suitable) MariaDB patches
---
+
+-- [duration=6.361289]
 Is MySQL dying?
---
+
+-- [duration=6.344709]
 Is Oracle a good custodian?
--- [mysql-size2014.png]
+
+-- [mysql-size2014.png] [duration=84.080444]
+
 # 4.1 jump was MySQL Cluster
 # MySQL 5.6 most new code ever.
 # to say Oracle isn't writing code is false.
--- [engine-size.png]
+# core linux kernel size: ~1.1million lines
+# core MySQL 5.6 size (sans plugins) ~800kloc
+# 125ppl versus over a thousand.
+
+-- [engine-size.png] [duration=62.398918]
+
 # MyISAM is dead, HEAP is static
 # InnoDB is worked on
 # InnoDB 5.7 is refactoring
 # InnoDB has received more attention now that MySQL&InnoDB in same company
 # than it ever has
--- [engine-size-ndb.png]
+
+-- [engine-size-ndb.png] [duration=32.606941]
+
 # NDB is very productive. No impact of acquisition
 # mostly "new module to do X"
--- [mysql-maria-loc.png]
+
+-- [mysql-maria-loc.png] [duration=42.847424]
+
 # MySQL closing the gap
 # integrating more features
--- [maria-delta.png]
+
+-- [maria-delta.png] [duration=37.885605]
+
 # all done using sloccount (minus inno, tokuDB)
 # so this is extra, not modified code
 # MariaDB 5.5 took a long time.
 # MariaDB 10.0 is taking a long time
 # No idea when anything from MySQL 5.7 will hit Maria.
--- [mysql-test.png]
+
+-- [mysql-test.png] [duration=73.489517]
+
 # first GA, most current
 # lines of test
 # mostly SQL statements
 # grown from very, very humble beginnings
 # We can *see* the quality push in 5.1
--- [size-vs-tset.png]
+
+-- [size-vs-tset.png] [duration=57.769024]
+
 # very clear boost *AFTER* 5.0 GA.
 # 5.1 had huge jump in tests
 # 5.5 stayed relatively static
 # 5.6 and 5.7 have grown with code size.
 # this does *not* show randgen and others
--- [maria-test.png]
+
+-- [maria-test.png] [duration=71.907288]
+
 # slightly larger.
 # to be expected. 5.x had more features/engines than MySQL
 # With 5.6 (maria 10.x) gap is closing
---
+
+-- [duration=1.365570]
+Present Adoption
+
+-- [5.5-debian-inst.png] [duration=8.359812]
+
+# MySQL 5.5, Percona Server 5.5, MariaDB 5.5 in Debian
+# No significant adoption
+
+-- [5.5-debian-ps-inst.png] [duration=16.519899]
+
+# Over the past 12 months, only now has MariaDB
+# caught up in pure numbers.
+# These numbers are still small.
+
+-- [galera-inst.png] [duration=7.177404]
+
+# different story with Galera
+# Percona is a clear leader
+# although these numbers are double digits, not big.
+
+-- [duration=1.232078]
 Future
---
+
+-- [duration=44.130573]
 MySQL 5.7
 
 Feb 2015
+# Oracle doesn't talk, I do.
 # I'd almost lay money on it.
 # Many inefficiencies and flaws in Oracle
 # They can get releases out that largely work.
 # That work better than any previous MySQL GA release.
---
+
+-- [duration=28.759628]
+Percona Server
+# continue to be following Oracle
+# plus features+bug fixes. Never a fork.
+
+-- [duration=45.362286]
 MariaDB 10.0
 
-Early-mid 2014
+Q1 2014
 # Make-or-break for Maria
+# delta may be smaller, hard to tell what's what
 # Now it's a company back project
 # company with VC.
-# Features in 5.6 and 10.0 implemented differently
+# Features in 5.6/5.7 and 10.0 implemented differently
+# parallel replication, multi-source rpl
+
 --
 MySQL <-> MariaDB
 # Migrating back and forth increasingly difficult
 --
-Fin
+What should I run?
+--
+MySQL*
+# unless there's a really good reason to go somewhere else
+# Percona Server: features useful for production
+--

@@ -59,10 +59,8 @@ MySQL AB founded
 # First, let's go back in time...
 # as well as anyone can remember, 1.0 was internal in 1995
 
--- [duration=7.826691]
+-- [duration=10]
 1996 - 3.19
-
--- [duration=12.473143]
 2000 - GPL
 # Wasn't always GPL, but big step in adoption
 # big risk for the company
@@ -71,6 +69,7 @@ MySQL AB founded
 -- [duration=16.036606]
 Dual license: libmysql
 # business and revenue model
+# incredibly significant %age of revenue
 
 -- [duration=30.475519]
 May 2000 - Replication in 3.23.15
@@ -103,9 +102,8 @@ Sept 2010 - PostgreSQL catches up
 
 -- [duration=6.627558]
 2001 - Mårten Mickos elected CEO
-
--- [duration=8.160025]
 2001 - first round VC
+# Marten saw company through to acquisition
 # Interesting implications for company
 
 -- [duration=17.536228]
@@ -117,8 +115,7 @@ Sept 2010 - PostgreSQL catches up
 -- [duration=13.222579]
 2003 - second round VC
 # Heavy investment in technology
-# Unlikely MySQL AB could ever
-# have hired as many devs otherwise.
+# dev team got large
 
 -- [duration=28.476242]
 March 2003: 4.0 GA
@@ -136,6 +133,8 @@ March 2003: 4.0 GA
 
 -- [duration=29.676802]
 A million features for Enterprise
+# SAP being "enterprise"
+# different from all current users (often large scale web)
 # This could be considered "MySQL focuses on Enterprise"
 # This is 2003: before views, stored procs, triggers,
 # curors, prepared statements, precision math,
@@ -147,6 +146,7 @@ A million features for Enterprise
 
 -- [duration=58.716999]
 MaxDB
+# formerly Addabas D
 # do not name your products after your kids.
 # started 1977. 6 companies, 9 names.
 # not MVCC.
@@ -173,6 +173,7 @@ MaxDB
 Oct 2004: 4.1 GA
 # incidently, shortly before I joined MySQL AB.
 # by this time, MySQL AB had hired just about all outside contributors
+# not coping well with outside devs has a long history in MySQL.
 
 -- [duration=46.644871]
 2005: 5.0 instability
@@ -215,12 +216,21 @@ End 2005: Maria project started
 # Needing a transactional MVCC database engine
 # not owned by Oracle.
 #
+# Jim Starkey, Ann harrison
+#
+--
+Falcon
 # Acquired existing tech, was to be called Falcon.
 # Was not complete, or integrated. Work started.
 # due to be complete "later this year"
 #
 # Other efforts also existed: revive Gemini,
 # didn't go anywhere.
+--
+Pluggable storage engine architecture
+
+Warts and all
+# Brilliant marketing, primitive teche.
 #
 # Falcon really showed how warty the "pluggable storage engine interface"
 # was. Jim: "is it really like this?" me: "yes, yes it is".
@@ -245,6 +255,9 @@ End 2005: Maria project started
 #
 # This fork still exists.
 # Many features went here first.
+# row based rpl, circular rpl with conflict resolution
+# online DDL (add/drop index and column)
+# Got releases out, got minor releases out
 
 -- [duration=5.878443]
 2007:
@@ -272,19 +285,20 @@ Jan 2008: Sun acquired MySQL AB
 # for...
 
 -- [duration=24.446249]
-One Billion dollars
+One BILLION dollars
 # Engineers did not see a lot of this.
 
 -- [duration=50.292187]
 2008: Year of Random Query Generator
 
-(the destroyer of servers)
+(the destroyer of projects)
 # Random Query Generator
 # showed true "quality" of server
 # grammar for constructing queries
 # generates them, throws them at server
 # 4 queries later, segfault.
 # rinse, repeat.
+# Heavy dents in Optimizer in 6.0, falcon, every "scalable" mysql solution
 
 -- [duration=39.251389]
 June 2008: Drizzle

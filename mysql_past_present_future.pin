@@ -402,6 +402,7 @@ No acquisition in 2012
 -- [duration=7.893705]
 Feb 2013: 5.6 GA
 # Just 2y 2m after 5.5
+# "We actually finish features"
 
 -- [duration=13.422357]
 April 2013: SkySQL acquires Monty Program
@@ -589,8 +590,10 @@ MariaDB 10.0
 
 Q1 2014
 # Make-or-break for Maria
-# delta may be smaller, hard to tell what's what
-# Now it's a company back project
+# delta may be smaller.. but
+# differences in core components.
+# hard to tell what's new to Maria 10, vs MySQL. going to get harder.
+# Now it's a company backed project
 # company with VC.
 # Features in 5.6/5.7 and 10.0 implemented differently
 # parallel replication, multi-source rpl
@@ -598,10 +601,14 @@ Q1 2014
 --
 MySQL <-> MariaDB
 # Migrating back and forth increasingly difficult
+# replication differences are likely to be problematic
+# 
 --
 What should I run?
 --
-MySQL*
+MySQL/Percona Server
 # unless there's a really good reason to go somewhere else
 # Percona Server: features useful for production
+--
+FIN
 --
